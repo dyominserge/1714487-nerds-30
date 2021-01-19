@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сергей Дёмин](https://up.htmlacademy.ru/htmlcss/30/user/1714487).
-* Наставник: [Евгений Петров] (https://htmlacademy.ru/profile/id617077).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
