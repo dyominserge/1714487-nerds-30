@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+       url("../fonts/roboto.woff") format("woff"),
+       url("../fonts/roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src:
+      url("../fonts/robotomedium.woff") format("woff"),
+      url("../fonts/robotomedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src:
+      url("../fonts/robotobold.woff") format("woff"),
+      url("../fonts/robotobold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --basic-red: #FB565A;
+  --basic-mediumRed: #E74246;
+  --basic-darkRed: #D7373B;
+  --basic-green: #00CA74;
+  --basic-mediumGreen: #00BC6C;
+  --basic-darkGreen: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-mediumYellow: #EAB534;
+  --basic-darkYellow: #E5A722;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-lightBlack: #283136;
+  --basic-grey: #EEEEEE;
+  --basic-mediumGrey: #DFDFDF;
+  --basic-darkGrey: #D5D5D5;
+}
+
+/* header */
+.header {
+  font-family: "RobotoMedium";
+  background-color: var(--basic-grey);
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info {
+  font-family: "RobotoMedium";
+  background-color: var(--basic-grey);
+}
+
+.shop {
+  font-family: "RobotoMedium";
+  background-color: var(--basic-grey);
+}
+
+/* nav */
+
+.menu-list {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/* main */
+
+/* button */
+
+.info-buttonMore {
+  font-family: "RobotoMedium";
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  width: 240px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards-pitch-button {
+  font-family: "RobotoMedium";
+  color: var(--basic-white);
+  background-color: var(--basic-yellow);
+  width: 160px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards-app-button {
+  font-family: "RobotoMedium";
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  width: 160px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  .cards-web-button {
+    font-family: "RobotoMedium";
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    width: 160px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feedback-button {
+    font-family: "RobotoMedium";
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    width: 219px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.body {
+  font-family: "Roboto";
+}
+
