@@ -38,105 +38,379 @@
   --basic-white: #FFFFFF;
   --basic-black: #000000;
   --basic-lightBlack: #283136;
+  --basic-ultralightBlack: #666666;
   --basic-grey: #EEEEEE;
   --basic-mediumGrey: #DFDFDF;
   --basic-darkGrey: #D5D5D5;
-}
 
-/* header */
-.header {
-  font-family: "RobotoMedium";
-  background-color: var(--basic-grey);
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  text-transform: uppercase;
 }
 
 a {
-  text-decoration: none;
+text-decoration: none;
+}
+/* header */
+
+.header {
+font-family: "RobotoMedium";
+background-color: var(--basic-grey);
+font-size: 16px;
+line-height: 30px;
+color: var(--basic-black);
+text-transform: uppercase;
+}
+
+.logo:active {
+opacity: 0.2;
 }
 
 .info {
-  font-family: "RobotoMedium";
-  background-color: var(--basic-grey);
+font-family: "RobotoMedium";
+background-color: var(--basic-grey);
 }
 
 .shop {
-  font-family: "RobotoMedium";
-  background-color: var(--basic-grey);
+font-family: "RobotoMedium";
+background-color: var(--basic-grey);
 }
 
 /* nav */
-
-.menu-list {
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  list-style: none;
-  text-transform: uppercase;
+.menu:hover {
+color: var(--basic-red);
 }
 
+.menu-list {
+font-size: 16px;
+line-height: 30px;
+list-style: none;
+text-transform: uppercase;
+}
+
+.menu-list .link a {
+color: var(--basic-black);
+}
+.menu-list .link a:hover {
+color: var(--basic-red);
+}
+.menu-list .link a:active {
+color: var(--basic-black);
+opacity: 0.3;
+}
+
+.cart {
+color: var(--basic-black);
+}
+.cart:hover {
+color: var(--basic-red);
+}
+.cart:active {
+color: var(--basic-black);
+opacity: 0.3;
+}
 /* main */
 
 /* button */
 
 .info-buttonMore {
-  font-family: "RobotoMedium";
-  color: var(--basic-white);
-  background-color: var(--basic-red);
-  width: 240px;
-  height: 50px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+font-family: "RobotoMedium";
+background-color: var(--basic-red);
+width: 240px;
+height: 50px;
+text-transform: uppercase;
+transition: .3s;
+}
+.info-buttonMore:hover {
+background-color: var(--basic-mediumRed);
+}
+.info-buttonMore:active {
+background-color: var(--basic-darkRed);
 }
 
 .cards-pitch-button {
-  font-family: "RobotoMedium";
-  color: var(--basic-white);
-  background-color: var(--basic-yellow);
-  width: 160px;
-  height: 50px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+font-family: "RobotoMedium";
+color: var(--basic-white);
+background-color: var(--basic-yellow);
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+transition: .3s;
+}
+.cards-pitch-button:hover {
+background-color: var(--basic-mediumYellow);
+}
+.cards-pitch-button:active {
+background-color: var(--basic-darkYellow);
 }
 
 .cards-app-button {
-  font-family: "RobotoMedium";
-  color: var(--basic-white);
-  background-color: var(--basic-green);
-  width: 160px;
-  height: 50px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+font-family: "RobotoMedium";
+color: var(--basic-white);
+background-color: var(--basic-green);
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+transition: .3s;
+}
+.cards-app-button:hover {
+background-color: var(--basic-mediumGreen);
+}
+.cards-app-button:active {
+background-color: var(--basic-darkGreen);
 }
 
-  .cards-web-button {
-    font-family: "RobotoMedium";
-    color: var(--basic-white);
-    background-color: var(--basic-red);
-    width: 160px;
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+.cards-web-button {
+font-family: "RobotoMedium";
+color: var(--basic-white);
+background-color: var(--basic-red);
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+transition: .3s;
+}
+.cards-web-button:hover {
+background-color: var(--basic-mediumRed);
+}
+.cards-web-button:active {
+background-color: var(--basic-darkRed);
 }
 
 .feedback-button {
-    font-family: "RobotoMedium";
-    color: var(--basic-white);
-    background-color: var(--basic-red);
-    width: 219px;
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+font-family: "RobotoMedium";
+color: var(--basic-white);
+background-color: var(--basic-red);
+width: 219px;
+height: 50px;
+text-align: center;
+text-transform: uppercase;
+transition: .3s;
+}
+.feedback-button:hover {
+background-color: var(--basic-mediumRed);
+}
+.feedback-button:active {
+background-color: var(--basic-darkRed);
 }
 
-.body {
-  font-family: "Roboto";
+/* text */
+
+.info-heading {
+font-family: "RobotoMedium";
+font-size: 55px;
+line-height: 55px;
 }
 
+.info-subheading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+
+.cards-web {
+font-family:"RobotoBold";
+font-size: 24px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.cards-web-subheading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+
+.cards-app {
+font-family:"RobotoBold";
+font-size: 24px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.cards-app-subheading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+
+.cards-pitch {
+font-family:"RobotoBold";
+font-size: 24px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.cards-pitch-heading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+
+.about-heading {
+font-family: "RobotoMedium";
+font-size: 45px;
+line-height: 45px;
+}
+
+.about-subheading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+
+.about-describe {
+font-family:"RobotoBold";
+font-size: 16px;
+line-height: 24px;
+text-transform: uppercase;
+}
+
+.about-list {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 24px;
+}
+.progress {
+font-family:"RobotoBold";
+font-size: 16px;
+line-height: 24px;
+text-transform: uppercase;
+}
+
+.progress-table-heading {
+font-family:"RobotoBold";
+font-size: 45px;
+line-height: 64px;
+}
+.progress-table-subheading {
+font-family: "Roboto";
+font-size: 16px;
+line-height: 18px;
+}
+
+/* фильтр шаблонов */
+.shop-heading {
+font-family: "RobotoMedium";
+font-size: 55px;
+line-height: 55px;
+}
+
+.cost-heading,
+.grid-heading,
+.features-heading,
+.sort-heading {
+font-family: "RobotoBold";
+color: var(--basic-black);
+text-transform: uppercase;
+font-size: 18px;
+line-height: 30px;
+}
+.grid,
+.features {
+font-family: "Roboto";
+color: var(--basic-ultralightBlack);
+font-size: 16px;
+line-height: 19px;
+}
+
+.sort-list {
+list-style: none;
+text-transform: uppercase;
+font-family: "Roboto";
+}
+
+.filter-form-button {
+font-family: "RobotoMedium";
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+}
+/* наши клиенты */
+
+.clients-list {
+list-style: none;
+}
+.clients-logo:hover {
+opacity: 1;
+}
+.clients-logo {
+opacity: 0.2;
+}
+.clients-logo:active {
+opacity: 0.1;
+}
+
+/* footer */
+.feedback-heading {
+font-family: "RobotoBold";
+font-size: 18px;
+line-height: 30px;
+}
+
+.feedback-address {
+font-family: "Roboto";
+color: var(--basic-ultralightBlack);
+font-size: 16px;
+line-height: 18px;
+}
+
+.feedback-tel {
+font-family: "Roboto";
+color: var(--basic-ultralightBlack);
+font-size: 16px;
+line-height: 18px;
+}
+.feedback-tel-link {
+font-family: "Roboto";
+color: var(--basic-ultralightBlack);
+font-size: 16px;
+line-height: 18px;
+}
+
+.social-heading {
+font-family: "RobotoBold";
+font-size: 36px;
+line-height: 36px;
+}
+
+.social-subheading {
+font-family: "Roboto";
+color: var(--basic-ultralightBlack);
+font-size: 16px;
+line-height: 22px;
+}
+
+.social-list {
+list-style: none;
+}
+
+.social-item-link {
+border-radius: 50%;
+background-color: var(--basic-grey);
+border: none;
+width: 81px;
+height: 81px;
+}
+
+.social-item-link:hover {
+background-color: var(--basic-mediumRed);
+}
+.social-item-link:active {
+  background-color: var(--basic-darkRed);
+}
+
+.social-item-link-ico:active {
+opacity: 0.3;
+}
+
+/* pagination */
+.pagination-list {
+list-style: none;
+}
+
+.pagination {
+font-family: "RobotoMedium";
+font-size: 16px;
+line-height: 18px;
+}
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+}
