@@ -1,58 +1,61 @@
 @font-face {
   font-family: "Roboto";
   src:
-       url("../fonts/roboto.woff") format("woff"),
-       url("../fonts/roboto.woff2") format("woff2");
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoMedium";
+  font-family: "Roboto";
   src:
-      url("../fonts/robotomedium.woff") format("woff"),
-      url("../fonts/robotomedium.woff2") format("woff2");
+      url("../fonts/robotomedium.woff2") format("woff2"),
+      url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoBold";
+  font-family: "Roboto";
   src:
-      url("../fonts/robotobold.woff") format("woff"),
-      url("../fonts/robotobold.woff2") format("woff2");
+      url("../fonts/robotobold.woff2") format("woff2"),
+      url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 :root {
-  --basic-red: #FB565A;
-  --basic-mediumRed: #E74246;
-  --basic-darkRed: #D7373B;
-  --basic-green: #00CA74;
-  --basic-mediumGreen: #00BC6C;
-  --basic-darkGreen: #00AA62;
-  --basic-yellow: #EFC849;
-  --basic-mediumYellow: #EAB534;
-  --basic-darkYellow: #E5A722;
-  --basic-white: #FFFFFF;
-  --basic-black: #000000;
-  --basic-lightBlack: #283136;
-  --basic-ultralightBlack: #666666;
-  --basic-grey: #EEEEEE;
-  --basic-mediumGrey: #DFDFDF;
-  --basic-darkGrey: #D5D5D5;
-
+--basic-red: #FB565A;
+--basic-mediumRed: #E74246;
+--basic-darkRed: #D7373B;
+--basic-green: #00CA74;
+--basic-mediumGreen: #00BC6C;
+--basic-darkGreen: #00AA62;
+--basic-yellow: #EFC849;
+--basic-mediumYellow: #EAB534;
+--basic-darkYellow: #E5A722;
+--basic-white: #FFFFFF;
+--basic-black: #000000;
+--basic-lightBlack: #283136;
+--basic-ultralightBlack: #666666;
+--basic-grey: #EEEEEE;
+--basic-mediumGrey: #DFDFDF;
+--basic-darkGrey: #D5D5D5;
 }
 
 a {
+font-family: "Roboto", "Arial", sans-serif;
 text-decoration: none;
+color: var(--basic-white);
 }
-/* header */
 
+/* index */
+/* header */
 .header {
-font-family: "RobotoMedium";
+font-family: "Roboto", "Arial", sans-serif;
 background-color: var(--basic-grey);
+font-weight: 500;
 font-size: 16px;
 line-height: 30px;
 color: var(--basic-black);
@@ -63,22 +66,13 @@ text-transform: uppercase;
 opacity: 0.2;
 }
 
-.info {
-font-family: "RobotoMedium";
-background-color: var(--basic-grey);
-}
-
-.shop {
-font-family: "RobotoMedium";
-background-color: var(--basic-grey);
-}
-
-/* nav */
+/* navigation */
 .menu:hover {
 color: var(--basic-red);
 }
 
 .menu-list {
+font-weight: 500;
 font-size: 16px;
 line-height: 30px;
 list-style: none;
@@ -88,9 +82,11 @@ text-transform: uppercase;
 .menu-list .link a {
 color: var(--basic-black);
 }
+
 .menu-list .link a:hover {
 color: var(--basic-red);
 }
+
 .menu-list .link a:active {
 color: var(--basic-black);
 opacity: 0.3;
@@ -99,195 +95,228 @@ opacity: 0.3;
 .cart {
 color: var(--basic-black);
 }
+
 .cart:hover {
 color: var(--basic-red);
 }
+
 .cart:active {
 color: var(--basic-black);
 opacity: 0.3;
 }
-/* main */
 
-/* button */
+/* main section */
 
-.info-buttonMore {
-font-family: "RobotoMedium";
-background-color: var(--basic-red);
-width: 240px;
-height: 50px;
-text-transform: uppercase;
-transition: .3s;
+.info {
+font-family: "Roboto", "Arial", sans-serif;
+background-color: var(--basic-grey);
 }
-.info-buttonMore:hover {
-background-color: var(--basic-mediumRed);
-}
-.info-buttonMore:active {
-background-color: var(--basic-darkRed);
-}
-
-.cards-pitch-button {
-font-family: "RobotoMedium";
-color: var(--basic-white);
-background-color: var(--basic-yellow);
-width: 160px;
-height: 50px;
-text-transform: uppercase;
-transition: .3s;
-}
-.cards-pitch-button:hover {
-background-color: var(--basic-mediumYellow);
-}
-.cards-pitch-button:active {
-background-color: var(--basic-darkYellow);
-}
-
-.cards-app-button {
-font-family: "RobotoMedium";
-color: var(--basic-white);
-background-color: var(--basic-green);
-width: 160px;
-height: 50px;
-text-transform: uppercase;
-transition: .3s;
-}
-.cards-app-button:hover {
-background-color: var(--basic-mediumGreen);
-}
-.cards-app-button:active {
-background-color: var(--basic-darkGreen);
-}
-
-.cards-web-button {
-font-family: "RobotoMedium";
-color: var(--basic-white);
-background-color: var(--basic-red);
-width: 160px;
-height: 50px;
-text-transform: uppercase;
-transition: .3s;
-}
-.cards-web-button:hover {
-background-color: var(--basic-mediumRed);
-}
-.cards-web-button:active {
-background-color: var(--basic-darkRed);
-}
-
-.feedback-button {
-font-family: "RobotoMedium";
-color: var(--basic-white);
-background-color: var(--basic-red);
-width: 219px;
-height: 50px;
-text-align: center;
-text-transform: uppercase;
-transition: .3s;
-}
-.feedback-button:hover {
-background-color: var(--basic-mediumRed);
-}
-.feedback-button:active {
-background-color: var(--basic-darkRed);
-}
-
-/* text */
 
 .info-heading {
-font-family: "RobotoMedium";
+font-weight: 500;
 font-size: 55px;
 line-height: 55px;
 }
 
 .info-subheading {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
 
+.info-buttonMore {
+font-weight: 500;
+width: 240px;
+height: 50px;
+text-transform: uppercase;
+background-color: var(--basic-red);
+transition: .3s;
+}
+
+.info-buttonMore:hover {
+background-color: var(--basic-mediumRed);
+}
+
+.info-buttonMore:active {
+background-color: var(--basic-darkRed);
+}
+
+/* cards */
+.cards {
+font-family: "Roboto", "Arial", sans-serif;
+}
+
 .cards-web {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-transform: uppercase;
 }
 
 .cards-web-subheading {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
 
+.cards-web-button {
+font-weight: 500;
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+color: var(--basic-white);
+background-color: var(--basic-red);
+transition: .3s;
+}
+
+.cards-web-button:hover {
+background-color: var(--basic-mediumRed);
+}
+
+.cards-web-button:active {
+background-color: var(--basic-darkRed);
+}
+
 .cards-app {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-transform: uppercase;
 }
 
 .cards-app-subheading {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
 
+.cards-app-button {
+font-weight: 500;
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+color: var(--basic-white);
+background-color: var(--basic-green);
+transition: .3s;
+}
+
+.cards-app-button:hover {
+background-color: var(--basic-mediumGreen);
+}
+
+.cards-app-button:active {
+background-color: var(--basic-darkGreen);
+}
+
 .cards-pitch {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-transform: uppercase;
 }
 
-.cards-pitch-heading {
-font-family: "Roboto";
+.cards-pitch-subheading {
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
 
+.cards-pitch-button {
+font-weight: 500;
+width: 160px;
+height: 50px;
+text-transform: uppercase;
+color: var(--basic-white);
+background-color: var(--basic-yellow);
+transition: .3s;
+}
+
+.cards-pitch-button:hover {
+background-color: var(--basic-mediumYellow);
+}
+
+.cards-pitch-button:active {
+background-color: var(--basic-darkYellow);
+}
+
+/* about */
+.about {
+font-family: "Roboto", "Arial", sans-serif;
+}
+
 .about-heading {
-font-family: "RobotoMedium";
+font-weight: 500;
 font-size: 45px;
 line-height: 45px;
 }
 
 .about-subheading {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
 
 .about-describe {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 16px;
 line-height: 24px;
 text-transform: uppercase;
 }
 
 .about-list {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
+
 .progress {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 16px;
 line-height: 24px;
 text-transform: uppercase;
 }
 
 .progress-table-heading {
-font-family:"RobotoBold";
+font-weight: 700;
 font-size: 45px;
 line-height: 64px;
 }
+
 .progress-table-subheading {
-font-family: "Roboto";
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
 }
 
-/* фильтр шаблонов */
+/* clients */
+.clients-list {
+list-style: none;
+}
+
+.clients-logo:hover {
+opacity: 1;
+}
+
+.clients-logo {
+opacity: 0.2;
+}
+
+.clients-logo:active {
+opacity: 0.1;
+}
+
+/* catalog */
+.filter {
+font-family: "Roboto", "Arial", sans-serif;
+}
+
+.shop {
+font-family: "Roboto", "Arial", sans-serif;
+background-color: var(--basic-grey);
+}
+
 .shop-heading {
-font-family: "RobotoMedium";
+font-weight: 500;
 font-size: 55px;
 line-height: 55px;
 }
@@ -296,85 +325,97 @@ line-height: 55px;
 .grid-heading,
 .features-heading,
 .sort-heading {
-font-family: "RobotoBold";
-color: var(--basic-black);
-text-transform: uppercase;
+font-weight: 700;
 font-size: 18px;
 line-height: 30px;
+text-transform: uppercase;
+color: var(--basic-black);
 }
+
 .grid,
 .features {
-font-family: "Roboto";
-color: var(--basic-ultralightBlack);
+font-weight: 400;
 font-size: 16px;
 line-height: 19px;
+color: var(--basic-ultralightBlack);
 }
 
 .sort-list {
+font-weight: 400;
 list-style: none;
 text-transform: uppercase;
-font-family: "Roboto";
 }
 
 .filter-form-button {
-font-family: "RobotoMedium";
+font-weight: 500;
 font-size: 16px;
 line-height: 18px;
 text-transform: uppercase;
 }
-/* наши клиенты */
 
-.clients-list {
-list-style: none;
-}
-.clients-logo:hover {
-opacity: 1;
-}
-.clients-logo {
-opacity: 0.2;
-}
-.clients-logo:active {
-opacity: 0.1;
-}
 
 /* footer */
+.footer {
+font-family: "Roboto", "Arial", sans-serif;
+}
+
 .feedback-heading {
-font-family: "RobotoBold";
+font-weight: 700;
 font-size: 18px;
 line-height: 30px;
 }
 
 .feedback-address {
-font-family: "Roboto";
-color: var(--basic-ultralightBlack);
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
+color: var(--basic-ultralightBlack);
 }
 
 .feedback-tel {
-font-family: "Roboto";
-color: var(--basic-ultralightBlack);
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
+color: var(--basic-ultralightBlack);
 }
+
 .feedback-tel-link {
-font-family: "Roboto";
-color: var(--basic-ultralightBlack);
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
+color: var(--basic-ultralightBlack);
+}
+
+.feedback-button {
+font-weight: 500;
+width: 219px;
+height: 50px;
+text-align: center;
+text-transform: uppercase;
+color: var(--basic-white);
+background-color: var(--basic-red);
+transition: .3s;
+}
+
+.feedback-button:hover {
+background-color: var(--basic-mediumRed);
+}
+
+.feedback-button:active {
+background-color: var(--basic-darkRed);
 }
 
 .social-heading {
-font-family: "RobotoBold";
+font-weight: 700;
 font-size: 36px;
 line-height: 36px;
 }
 
 .social-subheading {
-font-family: "Roboto";
-color: var(--basic-ultralightBlack);
+font-weight: 400;
 font-size: 16px;
 line-height: 22px;
+color: var(--basic-ultralightBlack);
 }
 
 .social-list {
@@ -383,15 +424,16 @@ list-style: none;
 
 .social-item-link {
 border-radius: 50%;
-background-color: var(--basic-grey);
 border: none;
 width: 81px;
 height: 81px;
+background-color: var(--basic-grey);
 }
 
 .social-item-link:hover {
 background-color: var(--basic-mediumRed);
 }
+
 .social-item-link:active {
   background-color: var(--basic-darkRed);
 }
@@ -400,17 +442,19 @@ background-color: var(--basic-mediumRed);
 opacity: 0.3;
 }
 
+
 /* pagination */
 .pagination-list {
 list-style: none;
 }
 
 .pagination {
-font-family: "RobotoMedium";
+font-weight: 500;
 font-size: 16px;
 line-height: 18px;
 }
+
 .pagination-item a {
-  color: var(--basic-black);
-  background-color: var(--basic-grey);
+color: var(--basic-black);
+background-color: var(--basic-grey);
 }
