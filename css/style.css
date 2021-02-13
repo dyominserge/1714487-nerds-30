@@ -446,8 +446,8 @@ list-style: none;
 .social-item-link {
 border-radius: 50%;
 border: none;
-width: 81px;
-height: 81px;
+width: 100px;
+height: 100px;
 background-color: var(--basic-grey);
 }
 
