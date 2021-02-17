@@ -492,6 +492,7 @@ padding-top: 30px;
 
 .about {
 display: grid;
+width: 1200px;
 grid-template-columns: 1fr 1fr;
 }
 
@@ -515,6 +516,9 @@ display: grid;
 grid-template-columns: 260px 1fr;
 }
 
+
+
+/* flex */
 .teamplates {
 display: flex;
 flex-wrap: wrap;
@@ -523,4 +527,24 @@ row-gap: 40px;
 justify-content: center;
 }
 
+.clients-container {
+display: flex;
+flex-wrap: wrap;
+column-gap: 100px;
+padding-top: 46px;
+padding-bottom: 44px;
+justify-content: center;
+}
 
+.filter-wrapper {
+width: 260px;
+}
+
+.filter-wrapper fieldset {
+border: none;
+}
+
+.filter-wrapper legend {
+margin-bottom: 16px;
+}
+/* фильтр стоимости */
